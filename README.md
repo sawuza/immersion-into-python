@@ -1,4 +1,4 @@
-# Diving into Python
+# Immersion into Python
 
 The First Block of Python Specialization
 
