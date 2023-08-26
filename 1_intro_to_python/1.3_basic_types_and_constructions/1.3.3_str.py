@@ -1,5 +1,5 @@
 n = "Курс по \"Python\" на stepik "
-print (n)
+print(n)
 
 # сырые строки (r - строки)
 
