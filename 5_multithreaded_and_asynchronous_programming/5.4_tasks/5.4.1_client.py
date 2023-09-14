@@ -22,7 +22,7 @@ class Client:
 
     def put(self, key, value, timestamp=None):
         timestamp = timestamp or int(time.time())
-        self.sock.send("put {} {} {}\n".format(key, value, timestamp).encode("utf-8"))
+        self.sock.sendall("put {} {} {}\n".format(key, value, timestamp).encode("utf-8"))
         data = self.sock.recv(1024).decode("utf-8")
         data_split = data.split("\n")
         if data_split[0] != "ok":
